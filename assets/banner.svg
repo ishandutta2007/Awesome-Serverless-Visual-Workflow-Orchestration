@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="380">
+  <defs>
+    <!-- Dark Tech Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulsePath {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatNode {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    .flow-line {
+      stroke-dasharray: 10, 10;
+      animation: pulsePath 8s linear infinite;
+    }
+    .floating-node-1 { animation: floatNode 6s ease-in-out infinite; }
+    .floating-node-2 { animation: floatNode 7s ease-in-out infinite 1s; }
+    .floating-node-3 { animation: floatNode 5.5s ease-in-out infinite 2s; }
+    .glow-bg { animation: glowPulse 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="380" fill="url(#bgGradient)" rx="16" />
+  <rect width="1200" height="380" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Glowing Orbs in Background -->
+  <circle cx="200" cy="100" r="180" fill="#4F46E5" opacity="0.15" filter="blur(40px)" class="glow-bg" />
+  <circle cx="1000" cy="280" r="200" fill="#EC4899" opacity="0.12" filter="blur(50px)" class="glow-bg" />
+
+  <!-- Dynamic Animated Workflow Connector Paths -->
+  <g fill="none" stroke-width="2.5">
+    <path d="M 100 120 C 300 40, 500 200, 700 80" stroke="#4F46E5" stroke-opacity="0.4" />
+    <path d="M 100 120 C 300 40, 500 200, 700 80" stroke="#818CF8" stroke-opacity="0.9" class="flow-line" />
+    
+    <path d="M 750 300 C 900 350, 1050 200, 1150 260" stroke="#EC4899" stroke-opacity="0.3" />
+    <path d="M 750 300 C 900 350, 1050 200, 1150 260" stroke="#F472B6" stroke-opacity="0.8" class="flow-line" />
+  </g>
+
+  <!-- Background Workflow Nodes (Visual Elements) -->
+  <g opacity="0.65">
+    <!-- Node 1: Trigger -->
+    <g class="floating-node-1" transform="translate(80, 80)">
+      <rect width="130" height="54" rx="27" fill="url(#nodeGrad1)" stroke="#93C5FD" stroke-width="1.5" />
+      <text x="65" y="32" fill="#FFFFFF" font-family="Segoe UI, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">⚡ Trigger</text>
+    </g>
+
+    <!-- Node 2: Durable Exec -->
+    <g class="floating-node-2" transform="translate(980, 60)">
+      <rect width="150" height="54" rx="12" fill="url(#nodeGrad2)" stroke="#6EE7B7" stroke-width="1.5" />
+      <text x="75" y="32" fill="#FFFFFF" font-family="Segoe UI, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">🛡️ Durable State</text>
+    </g>
+
+    <!-- Node 3: AI Agent -->
+    <g class="floating-node-3" transform="translate(1000, 240)">
+      <rect width="140" height="54" rx="12" fill="url(#nodeGrad3)" stroke="#FDE047" stroke-width="1.5" />
+      <text x="70" y="32" fill="#FFFFFF" font-family="Segoe UI, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">🤖 AI / LLM Node</text>
+    </g>
+  </g>
+
+  <!-- Foreground Glassmorphism Text Card (Ensures text stays clear and readable) -->
+  <g filter="url(#cardShadow)" transform="translate(100, 100)">
+    <rect width="1000" height="180" rx="20" fill="#0F172A" fill-opacity="0.85" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+    
+    <!-- Decorative Accent Top Line -->
+    <rect x="0" y="0" width="1000" height="4" rx="2" fill="url(#accentGlow)" />
+
+    <!-- Main Title -->
+    <text x="500" y="68" fill="#FFFFFF" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5" text-anchor="middle">
+      ⚡ Awesome Serverless Visual Workflow Orchestration
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="112" fill="#94A3B8" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="15" font-weight="400" text-anchor="middle">
+      Curated Directory of SaaS Platforms, Durable Execution Engines &amp; Visual Automation Frameworks
+    </text>
+
+    <!-- Feature Tags / Pills -->
+    <g transform="translate(210, 134)">
+      <rect x="0" y="0" width="125" height="28" rx="14" fill="#1E293B" stroke="#6366F1" stroke-width="1" />
+      <text x="62.5" y="18" fill="#A5B4FC" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">☁️ Serverless</text>
+
+      <rect x="140" y="0" width="145" height="28" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1" />
+      <text x="212.5" y="18" fill="#6EE7B7" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">🛡️ Durable Execution</text>
+
+      <rect x="300" y="0" width="130" height="28" rx="14" fill="#1E293B" stroke="#F59E0B" stroke-width="1" />
+      <text x="365" y="18" fill="#FDE047" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">🎨 Visual Builders</text>
+
+      <rect x="440" y="0" width="110" height="28" rx="14" fill="#1E293B" stroke="#EC4899" stroke-width="1" />
+      <text x="495" y="18" fill="#F472B6" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">🤖 AI Agents</text>
+    </g>
+  </g>
+</svg>

@@ -1,293 +1,222 @@
-# Awesome-Serverless-Visual-Workflow-Orchestration
-
-## Top Serverless Visual Workflow Orchestration Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Visual Workflow Design, Durable Execution & Self-Hosted Automation*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial workflow orchestration platforms** and **open-source projects** that let teams design, execute, and monitor multi-step business processes — from visual drag-and-drop builders to durable code-first execution engines.
-
-
-
-**Examples** include AWS Step Functions, Temporal Cloud, Camunda Platform 8, Zapier, Make, Workato, n8n Cloud, Azure Logic Apps, Google Cloud Workflows, and Inngest (the category leaders).
-
-
-
-**Open-source emphasis**: Workflow orchestration is one of the strongest open-source domains. **n8n** leads with 100,000+ GitHub stars and 400+ integrations. **Temporal** provides durable execution for mission-critical workflows. **Camunda** brings BPMN-based process orchestration. **Windmill** and **Kestra** offer developer-first alternatives. **Node-RED** and **Huginn** cover event-driven automation. **Dify**, **Flowise**, and **LangFlow** add AI/LLM orchestration. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Step Functions](https://aws.amazon.com/step-functions/)**  
-
-  **AWS's serverless workflow orchestration** — visual state machines for coordinating Lambda, ECS, and AWS services. **No infrastructure to manage** — pay per state transition . **Best for AWS-native workflows** .
-
-
-
-- **[Temporal Cloud](https://temporal.io/)**  
-
-  **Managed durable execution platform** — code-first workflows that survive crashes and outages . **The enterprise standard for mission-critical orchestration** . **Best for complex, long-running workflows** .
-
-
-
-- **[Camunda Platform 8](https://camunda.com/)**  
-
-  **BPMN-based process orchestration** — visual modeling, execution, and monitoring . **The enterprise standard for business process automation** . **Best for BPMN workflows** .
-
-
-
-- **[Zapier](https://zapier.com/)**  
-
-  **The most popular no-code automation platform** — 6,000+ app integrations . **Best for simple app-to-app automation** .
-
-
-
-- **[Make](https://www.make.com/)**  
-
-  **Visual automation platform** — 2,000+ apps with advanced logic and error handling . **Best for complex no-code workflows** .
-
-
-
-- **[Workato](https://www.workato.com/)**  
-
-  **Enterprise automation platform** — 1,000+ apps with governance and security . **Best for enterprise automation** .
-
-
-
-- **[n8n Cloud](https://n8n.io/)**  
-
-  **Managed version of the leading open-source workflow platform** — see Open-Source section for details.
-
-
-
-- **[Azure Logic Apps](https://azure.microsoft.com/en-us/products/logic-apps/)**  
-
-  **Microsoft's workflow automation** — 400+ connectors with Azure integration . **Best for Microsoft-centric organizations** .
-
-
-
-- **[Google Cloud Workflows](https://cloud.google.com/workflows)**  
-
-  **Google's serverless workflow engine** — YAML-based orchestration of Google Cloud services . **Best for GCP-native workflows** .
-
-
-
-- **[Inngest](https://www.inngest.com/)**  
-
-  **Event-driven workflow platform for serverless functions** — automatic retries, step functions, and fan-out . **Best for modern event-driven workflows** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### General Workflow Automation
-
-
-
-- **[n8n](https://github.com/n8n-io/n8n)**  
-
-  **The most popular self-hostable workflow automation platform**, Sustainable Use License (fair-code, not OSI) with **100,000+ GitHub stars** . **400+ integrations, visual editor, JavaScript/Python code nodes, and AI nodes built on LangChain** . **The de facto open-source Zapier alternative** — used by thousands of teams . **Note**: Internal use is free, but hosting for customers requires a commercial license . **Best for general-purpose workflow automation** .
-
-
-
-- **[Windmill](https://github.com/windmill-labs/windmill)**  
-
-  **Developer-first automation platform**, AGPLv3 licensed with **10,000+ GitHub stars** . **Write scripts in Python, TypeScript, Go, Bash, or SQL** . **Auto-generates UIs from function parameters** — with built-in approval flows and Git sync . **Ideal for teams wanting code + real ops, not a pure node canvas** . **Best for developer-centric automation** .
-
-
-
-- **[Kestra](https://github.com/kestra-io/kestra)**  
-
-  **Declarative orchestration platform**, Apache-2.0 licensed with **10,000+ GitHub stars** . **YAML-based workflow definition** — language-agnostic . **Event-driven and scheduled workflows** with 500+ plugins . **Best for declarative, data-oriented orchestration** .
-
-
-
-- **[Node-RED](https://github.com/node-red/node-red)**  
-
-  **Flow-based programming for event-driven applications**, Apache-2.0 licensed with **20,000+ GitHub stars** . **Visual wiring of devices, APIs, and services** . **The standard for IoT automation** — used by IBM, Siemens, and thousands of makers . **Best for IoT and event-driven automation** .
-
-
-
-- **[Huginn](https://github.com/huginn/huginn)**  
-
-  **Agent-based automation for web monitoring**, MIT licensed with **45,000+ GitHub stars** . **Monitor websites, scrape data, and trigger actions** . **The original open-source IFTTT alternative** — mature but development has slowed . **Best for web monitoring and scraping** .
-
-
-
-- **[Activepieces](https://github.com/activepieces/activepieces)**  
-
-  **MIT-licensed AI-native automation platform**, MIT licensed with **23,000+ GitHub stars** . **Clean UI with 200+ integrations and MCP server support** . **The most direct open-source alternative to n8n with OSI-approved licensing** . **Best for teams needing MIT licensing** .
-
-
-
-### Durable Execution
-
-
-
-- **[Temporal](https://github.com/temporalio/temporal)**  
-
-  **The leading durable execution platform**, MIT licensed with **15,000+ GitHub stars** . **Workflows survive crashes and resume from exact failure points** . **Supports Go, Java, Python, TypeScript, PHP, .NET SDKs** . **The reference for mission-critical workflow orchestration** — used by Stripe, Netflix, and Snap . **Best for long-running, reliable workflows** .
-
-
-
-- **[Cadence](https://github.com/uber/cadence)**  
-
-  **Uber's durable execution engine** (predecessor to Temporal), MIT licensed . **High-scale workflow orchestration** . **Best for large-scale workflow systems** .
-
-
-
-- **[Restate](https://github.com/restatedev/restate)**  
-
-  **Durable execution for microservices**, BSL licensed . **Lightweight alternative to Temporal** . **Best for simple durable workflows** .
-
-
-
-### BPMN & Process Orchestration
-
-
-
-- **[Camunda Platform 7](https://github.com/camunda/camunda-bpm-platform)**  
-
-  **Open-source BPMN workflow engine**, Apache-2.0 licensed . **Visual modeling, execution, and monitoring** . **The de facto open-source BPMN engine** . **Best for BPMN workflows** .
-
-
-
-- **[Flowable](https://github.com/flowable/flowable-engine)**  
-
-  **Open-source BPMN and DMN engine**, Apache-2.0 licensed . **Lightweight and embeddable** . **Best for Java-centric BPMN** .
-
-
-
-- **[Activiti](https://github.com/Activiti/Activiti)**  
-
-  **Open-source BPMN engine** (foundation for Flowable and Camunda), Apache-2.0 licensed . **Best for legacy BPMN deployments** .
-
-
-
-### AI/LLM Workflow Orchestration
-
-
-
-- **[Dify](https://github.com/langgenius/dify)**  
-
-  **Open-source LLM app development platform**, Apache-2.0 licensed with **150,000+ GitHub stars** . **Visual workflow builder for AI agents, RAG, and prompt orchestration** . **Best for AI-powered workflows** .
-
-
-
-- **[Flowise](https://github.com/FlowiseAI/Flowise)**  
-
-  **Drag-and-drop LLM app builder**, Apache-2.0 licensed with **152,000+ GitHub stars** . **LangChain-based with visual node editor** . **Best for AI workflow prototyping** .
-
-
-
-- **[LangFlow](https://github.com/langflow-ai/langflow)**  
-
-  **Visual framework for multi-agent and RAG applications**, MIT licensed with **152,000+ GitHub stars** . **Python-based with LangChain integration** . **Best for AI engineers** .
-
-
-
-- **[Sim](https://github.com/simstudioai/sim)**  
-
-  **Open-source AI agent orchestration workspace**, Apache-2.0 licensed with **29,000+ GitHub stars** . **Visual workflow builder with 1,000+ integrations** . **Best for AI agent workflows** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Prefect** — Python-native data workflow orchestration .
-
-- **Apache Airflow** — Workflow orchestration for data pipelines .
-
-- **Dagster** — Data orchestration with asset graph .
-
-- **Argo Workflows** — Kubernetes-native workflow engine .
-
-- **Conductor (Netflix)** — Microservices orchestration .
-
-- **Zeebe** — Camunda's cloud-native workflow engine .
-
-- **Automatisch** — Simple open-source Zapier alternative .
-
-- **Beehive** — Event-driven automation .
-
-- **StackStorm** — Event-driven automation for DevOps .
-
-
-
-**Frameworks for building custom workflow orchestration**: Choose based on use case. **n8n** for general-purpose automation with 400+ integrations . **Temporal** for durable execution of mission-critical workflows . **Camunda** for BPMN process orchestration . **Windmill** for developer-first code-based automation . **Kestra** for declarative YAML workflows . **Node-RED** for IoT and event-driven automation . **Dify**, **Flowise**, or **LangFlow** for AI/LLM workflows . Note that true enterprise workflow orchestration with managed infrastructure, global scale, and vendor-supported SLAs (Step Functions, Temporal Cloud, Camunda Platform 8) remains primarily commercial territory; open-source stacks provide strong visual design, durable execution, and integration foundations that require integration for complete enterprise deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Workflow orchestration platforms execute business logic and may handle sensitive data. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **License considerations**: n8n uses Sustainable Use License (fair-code, not OSI), Windmill uses AGPLv3, and Temporal uses MIT. Verify licensing against your use case before committing .
-
-- **Durable execution requires state management** — Temporal and Cadence persist workflow state. Self-hosted deployments require database and storage planning .
-
-- **AI workflow platforms evolve rapidly** — Dify, Flowise, and LangFlow are actively developed with frequent releases. Evaluate stability before production use.
-
-- The open-source ecosystem provides strong visual design, durable execution, and integration foundations, but **managed infrastructure, global scale, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+# ⚡ Awesome Serverless Visual Workflow Orchestration 🚀
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Serverless Visual Workflow Orchestration Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration?style=flat-square&logo=github" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration?style=flat-square&logo=github" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 💡 About This Repository
 
+Welcome to the **Awesome Serverless Visual Workflow Orchestration** directory! This repository tracks top-tier **cloud SaaS platforms** and **open-source developer engines** designed for visual workflow design, durable state machine execution, self-hosted business process automation, BPMN modeling, and AI agent pipeline orchestration.
 
-**Made for automation engineers, platform teams, and organizations seeking workflow orchestration sovereignty.**  
+Whether building event-driven microservices, multi-step SaaS integrations, ETL pipelines, or autonomous LLM agent graphs, this guide provides a structured comparison of commercial SaaS solutions and self-hostable open-source frameworks.
 
-Let's make serverless visual workflow orchestration more open, transparent, and reliable.
+---
+
+## 📌 Table of Contents
+
+- [☁️ SaaS & Hosted Workflow Platforms](#️-saas--hosted-workflow-platforms)
+- [🔓 Open-Source Workflow Projects](#-open-source-workflow-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer \& Licensing](#️-disclaimer--licensing)
+- [⭐ Star History](#-star-history)
+
+---
+
+## ☁️ SaaS & Hosted Workflow Platforms
+
+📊 **Market Size & Market Structure**: The global workflow orchestration and business process automation market is estimated at **~$12.5 Billion in 2026** (projected to reach $28+ Billion by 2032 at an 18.5% CAGR). The sector is **moderately fragmented**, featuring cloud hyper-scalers (AWS Step Functions, Azure Logic Apps, GCP Workflows) alongside fast-growing durable execution platforms (Temporal Cloud), enterprise BPMN leaders (Camunda), and visual no-code/low-code integration ecosystems (Zapier, Make, Workato).
+
+The table below lists leading commercial SaaS workflow orchestration platforms, sorted by **Company Valuation / Revenue (Descending)**:
+
+| Platform | Company Valuation / Revenue | Starting Tier Price | Free Tier / Trial Limit | Best For / Key Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure Logic Apps](https://azure.microsoft.com/en-us/products/logic-apps/)** 🌐 | **$3.2 Trillion** *(Microsoft Corp / $110B+ Cloud Rev)* | **$0.000025** per action execution | **4,000 free action executions/mo** *(+$200 free 30-day Azure credit)* | Microsoft enterprise stack & 400+ cloud connectors |
+| **[AWS Step Functions](https://aws.amazon.com/step-functions/)** ⚡ | **$2.1 Trillion** *(Amazon Inc / $105B+ AWS Rev)* | **$0.025** per 1,000 state transitions ($0.000025/step) | **4,000 free state transitions/mo** forever | AWS-native serverless microservices & Lambda visual state machines |
+| **[Google Cloud Workflows](https://cloud.google.com/workflows)** ☁️ | **$2.0 Trillion** *(Alphabet Inc / $40B+ GCP Rev)* | **$0.01** per 1,000 internal steps | **5,000 free internal steps + 2,000 HTTP steps/mo** | GCP-native service orchestration with lightweight YAML definitions |
+| **[Make](https://www.make.com/)** 🎨 | **$13.0 Billion** *(Celonis Group Valuation)* | **$9.00/mo** *(Core Plan)* | **1,000 operations/mo & 2 active scenarios** forever | Visual drag-and-drop workflow canvas with 2,000+ app integrations |
+| **[Workato](https://www.workato.com/)** 🏢 | **$5.7 Billion** *(Series E Valuation)* | **$833.00/mo** *(~$10,000/yr base workspace)* | **30-day free trial** *(up to 500 recipe runs)* | Enterprise iPaaS automation with strict compliance, RBAC, and governance |
+| **[Zapier](https://zapier.com/)** ⚡ | **$5.0 Billion** *($250M+ ARR)* | **$19.99/mo** *(Starter Plan, annual)* | **100 tasks/mo & 5 single-step Zaps** forever | No-code web app integration with 6,000+ ready-to-use application triggers |
+| **[Temporal Cloud](https://temporal.io/)** 🛡️ | **$1.5 Billion** *(Series B Valuation)* | **$0.00005** per Action (~$50 / 1M actions) | **$200 free cloud credits** *(valid for 30 days)* | Mission-critical durable execution for code-first distributed applications |
+| **[Camunda Platform 8](https://camunda.com/)** 🔄 | **$1.0 Billion+** *(€100M+ Funding)* | **$99.00/mo** *(Starter Plan)* | **30-day free trial** *(up to 5,000 process instances)* | Enterprise BPMN 2.0 visual process modeling, Zeebe engine, and execution analytics |
+| **[n8n Cloud](https://n8n.io/)** 🚀 | **$150 Million+** *(Series A/B)* | **€20.00/mo** *(~$22/mo Starter, 2,500 executions)* | **14-day free trial** *(2,500 workflow executions)* | Managed cloud version of n8n with 400+ integrations & AI LangChain nodes |
+| **[Inngest](https://www.inngest.com/)** ⏱️ | **$25 Million+** *(Seed/Series A)* | **$25.00/mo** *(Pro Plan)* | **50,000 runs/mo & 500,000 events/mo** forever | Developer-first event-driven workflow engine for serverless Node/Python apps |
+
+---
+
+## 🔓 Open-Source Workflow Projects
+
+Workflow orchestration is one of the most vibrant open-source ecosystems. The projects below range from fair-code visual builders to Apache-2.0 and MIT-licensed durable execution engines, sorted by **GitHub Stars (Descending)**:
+
+### 1. **[n8n](https://github.com/n8n-io/n8n)** ⚡
+[![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)
+- **Description**: The leading self-hostable workflow automation platform. Features 400+ integrations, node-based visual canvas, custom JS/Python code steps, and native LangChain AI agent nodes.
+- **License**: Sustainable Use License (Fair-code)
+- **Best For**: General-purpose self-hosted workflow automation & Zapier replacement.
+
+### 2. **[Dify](https://github.com/langgenius/dify)** 🤖
+[![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers)
+- **Description**: Open-source LLM application development platform featuring a visual workflow builder for AI agents, RAG pipelines, and prompt orchestration.
+- **License**: Apache-2.0
+- **Best For**: Production-ready LLM workflows and autonomous AI agent execution.
+
+### 3. **[LangFlow](https://github.com/langflow-ai/langflow)** 🧠
+[![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers)
+- **Description**: Dynamic visual UI framework for multi-agent applications and RAG systems built on Python and LangChain.
+- **License**: MIT
+- **Best For**: AI engineers prototyping and deploying complex multi-agent graphs.
+
+### 4. **[Flowise](https://github.com/FlowiseAI/Flowise)** 🎨
+[![GitHub stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers)
+- **Description**: Drag-and-drop visual builder for creating customized LLM chains, agent flows, and vector store retrieval pipelines.
+- **License**: Apache-2.0
+- **Best For**: Rapid visual AI workflow prototyping.
+
+### 5. **[Huginn](https://github.com/huginn/huginn)** 🕵️
+[![GitHub stars](https://img.shields.io/github/stars/huginn/huginn?style=social&color=white)](https://github.com/huginn/huginn/stargazers)
+- **Description**: Agent-based automation system for web scraping, monitoring websites, and triggering event actions when data changes.
+- **License**: MIT
+- **Best For**: Web scraping, website change tracking, and automated RSS/event feeds.
+
+### 6. **[Apache Airflow](https://github.com/apache/airflow)** 📊
+[![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)
+- **Description**: The enterprise standard platform for programmatically authoring, scheduling, and monitoring batch data pipelines as Python DAGs.
+- **License**: Apache-2.0
+- **Best For**: Enterprise data engineering and scheduled batch ETL workflows.
+
+### 7. **[Kestra](https://github.com/kestra-io/kestra)** 📜
+[![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)
+- **Description**: Universal open-source declarative orchestrator using YAML workflow definitions with 500+ plugins for data and API integration.
+- **License**: Apache-2.0
+- **Best For**: Language-agnostic, declarative YAML-based data and microservice workflows.
+
+### 8. **[Activepieces](https://github.com/activepieces/activepieces)** 🧩
+[![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)
+- **Description**: MIT-licensed open-source automation framework with 200+ prebuilt pieces, visual canvas, and native Model Context Protocol (MCP) server support.
+- **License**: MIT
+- **Best For**: Open-source MIT-compliant alternative to Zapier & n8n.
+
+### 9. **[Prefect](https://github.com/prefecthq/prefect)** 🐍
+[![GitHub stars](https://img.shields.io/github/stars/prefecthq/prefect?style=social&color=white)](https://github.com/prefecthq/prefect/stargazers)
+- **Description**: Modern Python-native data orchestration engine that turns Python functions into durable, monitored tasks and flows.
+- **License**: Apache-2.0
+- **Best For**: Python-first data pipelines and dynamic task graphs.
+
+### 10. **[Node-RED](https://github.com/node-red/node-red)** 🌐
+[![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
+- **Description**: Flow-based visual programming tool for wiring hardware devices, APIs, and online services together in a browser editor.
+- **License**: Apache-2.0
+- **Best For**: IoT automation, edge computing, and real-time event-driven flow wiring.
+
+### 11. **[Temporal](https://github.com/temporalio/temporal)** 🛡️
+[![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)
+- **Description**: The industry-standard durable execution platform. Guarantees code execution through hardware crashes, outages, and long delays across Go, Java, Python, TypeScript, and .NET.
+- **License**: MIT
+- **Best For**: Mission-critical distributed systems, financial transactions, and resilient long-running code.
+
+### 12. **[Windmill](https://github.com/windmill-labs/windmill)** 🛠️
+[![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)
+- **Description**: Developer-centric automation engine. Write scripts in Python, TypeScript, Go, Bash, or SQL, auto-generate web UIs from function signatures, and orchestrate workflows with Git sync.
+- **License**: AGPLv3
+- **Best For**: Developer-first internal tools, ops scripts, and code-based workflows.
+
+### 13. **[Argo Workflows](https://github.com/argoproj/argo-workflows)** ☸️
+[![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)
+- **Description**: Container-native workflow engine for orchestrating parallel jobs on Kubernetes using custom resource definitions (CRDs).
+- **License**: Apache-2.0
+- **Best For**: Kubernetes-native batch computing, CI/CD pipelines, and ML model training.
+
+### 14. **[Dagster](https://github.com/dagster-io/dagster)** 🗄️
+[![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)
+- **Description**: Asset-centric data orchestrator designed for defining, testing, executing, and observing data assets across python stacks.
+- **License**: Apache-2.0
+- **Best For**: Asset-based data engineering and analytics pipeline orchestration.
+
+### 15. **[Automatisch](https://github.com/automatisch/automatisch)** 🔄
+[![GitHub stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers)
+- **Description**: Simple, privacy-focused open-source Zapier alternative allowing self-hosted cloud app integration without privacy leakage.
+- **License**: AGPLv3
+- **Best For**: GDPR-compliant, privacy-first simple cloud app automation.
+
+### 16. **[Netflix Conductor](https://github.com/netflix/conductor)** 🎬
+[![GitHub stars](https://img.shields.io/github/stars/netflix/conductor?style=social&color=white)](https://github.com/netflix/conductor/stargazers)
+- **Description**: Microservice orchestration engine developed by Netflix to coordinate event-driven workflows executing at massive scale across cloud infrastructure.
+- **License**: Apache-2.0
+- **Best For**: Enterprise-scale microservices orchestration and distributed task queue management.
+
+### 17. **[Activiti](https://github.com/Activiti/Activiti)** 📐
+[![GitHub stars](https://img.shields.io/github/stars/Activiti/Activiti?style=social&color=white)](https://github.com/Activiti/Activiti/stargazers)
+- **Description**: Battle-tested open-source BPMN 2.0 workflow engine targeted at enterprise Java developers and distributed process architectures.
+- **License**: Apache-2.0
+- **Best For**: Java enterprise process automation and legacy BPMN deployments.
+
+### 18. **[Flowable](https://github.com/flowable/flowable-engine)** ⚙️
+[![GitHub stars](https://img.shields.io/github/stars/flowable/flowable-engine?style=social&color=white)](https://github.com/flowable/flowable-engine/stargazers)
+- **Description**: Compact, highly efficient BPMN 2.0, CMMN, and DMN execution engine for Java applications and cloud-native services.
+- **License**: Apache-2.0
+- **Best For**: Lightweight embeddable Java BPMN workflow engines.
+
+### 19. **[Uber Cadence](https://github.com/uber/cadence)** 🚗
+[![GitHub stars](https://img.shields.io/github/stars/uber/cadence?style=social&color=white)](https://github.com/uber/cadence/stargazers)
+- **Description**: Fault-tolerant stateful code execution service developed at Uber for orchestrating complex, asynchronous long-running business logic.
+- **License**: MIT
+- **Best For**: High-throughput distributed task queues and durable execution.
+
+### 20. **[StackStorm](https://github.com/stackstorm/st2)** 🌩️
+[![GitHub stars](https://img.shields.io/github/stars/stackstorm/st2?style=social&color=white)](https://github.com/stackstorm/st2/stargazers)
+- **Description**: Event-driven automation engine for auto-remediation, DevOps response, and infrastructure operations.
+- **License**: Apache-2.0
+- **Best For**: DevOps auto-remediation and security event response.
+
+### 21. **[Inngest Open Source](https://github.com/inngest/inngest)** ⚡
+[![GitHub stars](https://img.shields.io/github/stars/inngest/inngest?style=social&color=white)](https://github.com/inngest/inngest/stargazers)
+- **Description**: Event-driven queue and workflow engine for serverless functions, handling retries, delays, and concurrency control.
+- **License**: Apache-2.0
+- **Best For**: Developer-first serverless step functions and queuing.
+
+### 22. **[Restate](https://github.com/restatedev/restate)** 🔁
+[![GitHub stars](https://img.shields.io/github/stars/restatedev/restate?style=social&color=white)](https://github.com/restatedev/restate/stargazers)
+- **Description**: Lightweight durable execution engine for RPCs, event handlers, and microservices without complex infrastructure.
+- **License**: BSL-1.1
+- **Best For**: Fast, low-latency durable execution for microservices.
+
+### 23. **[Camunda Platform 7](https://github.com/camunda/camunda-bpm-platform)** 🏢
+[![GitHub stars](https://img.shields.io/github/stars/camunda/camunda-bpm-platform?style=social&color=white)](https://github.com/camunda/camunda-bpm-platform/stargazers)
+- **Description**: Classic open-source BPMN workflow and decision engine for Java and Spring Boot applications.
+- **License**: Apache-2.0
+- **Best For**: Self-hosted BPMN 2.0 process modeling and Java enterprise applications.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! If you know of an awesome serverless, visual, or durable workflow orchestration tool that isn't listed here:
+
+1. Fork this repository.
+2. Add your entry to `README.md` following the established table / list format.
+3. Ensure the project meets quality criteria (active maintenance, clear documentation).
+4. Create a Pull Request with a short summary of the project.
+
+---
+
+## ⚠️ Disclaimer & Licensing
+
+- This repository is a **community-curated index** for educational and architectural evaluation purposes.
+- Check individual vendor licenses before deploying into production (e.g. n8n uses Sustainable Use License, Windmill uses AGPLv3, Temporal uses MIT).
+- Learn more about curated awesome lists at [Awesome Lists](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Serverless-Visual-Workflow-Orchestration&type=date&legend=top-left)
