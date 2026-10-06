@@ -28,6 +28,7 @@ Whether building event-driven microservices, multi-step SaaS integrations, ETL p
 - [☁️ SaaS & Hosted Workflow Platforms](#️-saas--hosted-workflow-platforms)
 - [🔓 Open-Source Workflow Projects](#-open-source-workflow-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [❤️ Support & Sponsor](#️-support--sponsor)
 - [⚠️ Disclaimer \& Licensing](#️-disclaimer--licensing)
 - [⭐ Star History](#-star-history)
 
@@ -206,6 +207,18 @@ Contributions are warmly welcome! If you know of an awesome serverless, visual, 
 2. Add your entry to `README.md` following the established table / list format.
 3. Ensure the project meets quality criteria (active maintenance, clear documentation).
 4. Create a Pull Request with a short summary of the project.
+
+---
+
+## ❤️ Support & Sponsor
+
+Thank you for exploring and using this repository! If you find this curated directory of serverless visual workflow orchestration tools helpful, please consider supporting the project:
+
+- ⭐ **Star** this repository to show your support and help others discover it.
+- 🔀 **Fork** and contribute new workflow tools, durable execution engines, or updates.
+- 📢 **Share** this list with your team, community, and fellow automation engineers!
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support the ongoing maintenance and curation of this repository, consider sponsoring via the GitHub Sponsors Dashboard:  
+  [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/ishandutta2007)
 
 ---
 
